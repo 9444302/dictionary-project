@@ -1,6 +1,7 @@
 import React from "react";
 import Definition from "./Definition";
 import Phonetics from "./Phonetics"
+import Photos from "./Photos"
 
 import "./results.css"
 
@@ -11,8 +12,8 @@ let results = props.define
 return (
   <div className="results">
     <section>
-    <h2>{results.word}</h2>
-    <Phonetics phonetics={results.phonetics} />
+      <h2>{results.word}</h2>
+      <Phonetics phonetics={results.phonetics} />
     </section>
     {results.meanings.map(function (meaning, index) {
       return (
@@ -23,6 +24,9 @@ return (
         </section>
       );
     })}
+    <section>
+      <Photos results={props.photos}/>
+    </section>
   </div>
 );} else{
     return null
