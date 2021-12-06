@@ -1,6 +1,8 @@
 import './App.css';
 import Dictionary from "./Dictionary";
 
+import "./App.css"
+
 function App() {
   return (
     <div className="App">

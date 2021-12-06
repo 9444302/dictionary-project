@@ -1,0 +1,17 @@
+section {
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px 1px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+h2 {
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+.listen {
+background-color: rgb(75, 168, 137);
+color: white;
+border-radius: 20px;
+padding: 2px 10px;
+}

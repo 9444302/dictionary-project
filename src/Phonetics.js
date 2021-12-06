@@ -9,17 +9,21 @@ export default function Phonetics (props) {
                 if (phonetic.audio){
                 return (
                   <div key={index}>
+                    <p>{`(${phonetic.text})`}</p>
                     <a
                       href={phonetic.audio}
                       target="_blank"
                       rel="noreferrer"
-                    >listen</a>
-                    <span>{`(${phonetic.text})`}</span>
+                      className="btn listen"
+                    >
+                      listen
+                    </a>
                   </div>
                 );} else {
                     return (
                       <div key={index}>
-                        <span>{`(${phonetic.text})`}</span>
+                        <p>{`(${phonetic.text})`}</p>
+                      
                       </div>
                     );
                 }

@@ -1,6 +1,8 @@
 import React from "react";
 import Synonyms from "./Synonyms"
 
+import "./definition.css"
+
 export default function Definition(props) {
   console.log(props);
   return (
@@ -10,16 +12,23 @@ export default function Definition(props) {
         if (definition.example) {
           return (
             <div key={index}>
-              <p className="def">{`Definition: ${definition.definition}`}</p>
-              <p className="example">{`Example: ${definition.example}`}</p>
-              <Synonyms synonyms={definition.synonyms}/>
+              <p className="def">
+                <strong>Definition: </strong>
+                {definition.definition}
+              </p>
+              <p className="example">
+                <strong>Example: </strong>{definition.example}
+              </p>
+              <Synonyms synonyms={definition.synonyms} />
             </div>
           );
         } else {
           return (
-              <div key={index}>
-            <p className="def">{`Definition: ${definition.definition}`}</p>
-            <Synonyms synonyms={definition.synonyms}/>
+            <div key={index}>
+              <p className="def">
+                <strong>Definition: </strong>{definition.definition}
+              </p>
+              <Synonyms synonyms={definition.synonyms} />
             </div>
           );
         }
