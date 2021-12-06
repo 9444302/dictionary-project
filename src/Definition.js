@@ -4,7 +4,6 @@ import Synonyms from "./Synonyms"
 import "./definition.css"
 
 export default function Definition(props) {
-  console.log(props);
   return (
     <div>
       <h3>{props.def.partOfSpeech}</h3>

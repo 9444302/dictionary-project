@@ -8,7 +8,6 @@ import "./results.css"
 export default function Results(props) {
 let results = props.define
     if (results) {
-      console.log(results)
 return (
   <div className="results">
     <section>

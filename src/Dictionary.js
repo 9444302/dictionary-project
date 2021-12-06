@@ -12,7 +12,6 @@ export default function Dictionary(){
     }
     function handelPicResponse(response) {
         setPhotos(response.data.photos)
-        console.log(response.data.photos)
     }
 
     function handleSubmit(event){
