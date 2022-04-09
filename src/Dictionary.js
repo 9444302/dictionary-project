@@ -31,8 +31,8 @@ export default function Dictionary(){
     return (
 <div className="dictionary">
     <form onSubmit={handleSubmit}>
-        <input type="search" placeholder="Search word" onChange={getKeyword} />
-        <input type="submit" value="Search" />
+        <input className="text" type="search" placeholder="Search word" onChange={getKeyword} />
+        <input className="search-button" type="submit" value="Search" />
     </form>
     <Results define={data} photos={photos} />
 </div>
