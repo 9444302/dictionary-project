@@ -20,4 +20,8 @@ footer {
   background-color: #2c7da0;
   border: none;
   border-radius: 3px;
+  color: white;
+}
+.search-button:hover {
+  color: black;
 }
